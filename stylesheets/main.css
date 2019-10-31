@@ -51,6 +51,11 @@ a:hover {
   text-decoration: none;
 }
 
+/* line 21, ../sass/base/_base.scss */
+.button-link a {
+  color: #fff;
+}
+
 /*  Modules - Sites components */
 /* Topography */
 /* Variables file */
@@ -152,6 +157,55 @@ h5 {
   color: #fff;
 }
 
+/* opening hours */
+/* line 44, ../sass/modules/_blocks.scss */
+.business-hours {
+  background: #007BFF;
+  padding: 25px 14px;
+  margin-top: -15px;
+  position: relative;
+}
+
+/* line 50, ../sass/modules/_blocks.scss */
+.business-hours:before {
+  content: '';
+  width: 23px;
+  height: 23px;
+  background: #007BFF;
+  position: absolute;
+  top: 5px;
+  left: -12px;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+/* line 61, ../sass/modules/_blocks.scss */
+.business-hours .title {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 5px;
+  border-left: 4px solid #28A745;
+}
+
+/* line 68, ../sass/modules/_blocks.scss */
+.business-hours li {
+  color: #fff;
+  line-height: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 73, ../sass/modules/_blocks.scss */
+.business-hours li:last-child {
+  border-bottom: none;
+}
+
+/* line 76, ../sass/modules/_blocks.scss */
+.business-hours .opening-hours li.today {
+  color: #ffac0c;
+  font-weight: bold;
+}
+
 /* Buttons */
 /* Variables file */
 /* colors */
@@ -176,9 +230,10 @@ h5 {
 .btn-view-number {
   background-color: #28A745;
   font-size: 13px;
+  color: #fff;
 }
 
-/* line 24, ../sass/modules/_buttons.scss */
+/* line 25, ../sass/modules/_buttons.scss */
 .btn-mail-seller {
   background-color: #007BFF;
   font-size: 13px;
@@ -189,31 +244,31 @@ h5 {
 /* colors */
 /* font sizes */
 /* More cars blocks */
-/* line 10, ../sass/modules/_components.scss */
+/* line 9, ../sass/modules/_components.scss */
 #card-wrapper .card {
   margin-bottom: 15px;
 }
-/* line 14, ../sass/modules/_components.scss */
+/* line 13, ../sass/modules/_components.scss */
 #card-wrapper .dealer-more {
   margin-top: 15px;
 }
-/* line 18, ../sass/modules/_components.scss */
+/* line 17, ../sass/modules/_components.scss */
 #card-wrapper .card-body {
   padding: 0.5rem;
 }
-/* line 21, ../sass/modules/_components.scss */
+/* line 20, ../sass/modules/_components.scss */
 #card-wrapper .card-body .card-dealerAdress {
   font-weight: bold;
   color: #007BFF;
   font-size: 11px;
 }
-/* line 28, ../sass/modules/_components.scss */
+/* line 26, ../sass/modules/_components.scss */
 #card-wrapper .card-body .price-details {
   position: relative;
   bottom: 30px;
   color: #fff;
 }
-/* line 34, ../sass/modules/_components.scss */
+/* line 32, ../sass/modules/_components.scss */
 #card-wrapper .card-body .price-details .small-modal {
   background: #000;
   opacity: 0.9;
@@ -222,25 +277,25 @@ h5 {
   border-radius: 5px;
   font-size: 11px;
 }
-/* line 45, ../sass/modules/_components.scss */
+/* line 43, ../sass/modules/_components.scss */
 #card-wrapper .card-body .card-more-extras {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
-/* line 50, ../sass/modules/_components.scss */
+/* line 48, ../sass/modules/_components.scss */
 #card-wrapper .card-body .card-more-extras .item {
   width: 50%;
   text-align: initial;
   padding: 0px;
   line-height: 1.5em;
 }
-/* line 57, ../sass/modules/_components.scss */
+/* line 55, ../sass/modules/_components.scss */
 #card-wrapper .card-body .card-more-extras .icon-svg {
   width: 25px;
   display: flex;
 }
-/* line 62, ../sass/modules/_components.scss */
+/* line 60, ../sass/modules/_components.scss */
 #card-wrapper .card-body .card-more-extras .item-value {
   font-weight: bold;
 }
@@ -348,12 +403,13 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   margin: 15px 0 15px 0;
+  color: #7c7777;
 }
-/* line 101, ../sass/modules/_sections.scss */
+/* line 102, ../sass/modules/_sections.scss */
 #vehicle-details .user-cta a {
   color: #7c7777;
 }
-/* line 105, ../sass/modules/_sections.scss */
+/* line 106, ../sass/modules/_sections.scss */
 #vehicle-details .user-cta .item {
   width: 33%;
 }
@@ -387,9 +443,19 @@ h5 {
   margin: 25px 0 75px 0;
 }
 
-/* line 137, ../sass/modules/_sections.scss */
+/* line 136, ../sass/modules/_sections.scss */
 .car-brands {
   margin-top: 15px;
+}
+
+/* line 140, ../sass/modules/_sections.scss */
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  padding-left: 5px;
 }
 
 /*  Layouts - Page layouts */
@@ -471,39 +537,35 @@ footer .copyright {
   padding: 0 5px 0 5px;
 }
 
-/* line 29, ../sass/layouts/_forms.scss */
-.fa-map-marker {
+/* line 30, ../sass/layouts/_forms.scss */
+#location-lbl .fa-map-marker {
   float: right;
   margin-right: 6px;
   margin-top: -26px;
   position: relative;
   z-index: 2;
 }
-
-/* line 37, ../sass/layouts/_forms.scss */
-.icon-addon {
+/* line 38, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon {
   position: relative;
   color: #555;
   display: block;
 }
-
-/* line 43, ../sass/layouts/_forms.scss */
-.icon-addon:after,
-.icon-addon:before {
+/* line 44, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon:after,
+#location-lbl .icon-addon:before {
   display: table;
   content: " ";
 }
-
-/* line 49, ../sass/layouts/_forms.scss */
-.icon-addon:after {
+/* line 50, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon:after {
   clear: both;
 }
-
-/* line 53, ../sass/layouts/_forms.scss */
-.icon-addon.addon-md .glyphicon,
-.icon-addon .glyphicon,
-.icon-addon.addon-md .fa,
-.icon-addon .fa {
+/* line 54, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon.addon-md .glyphicon,
+#location-lbl .icon-addon .glyphicon,
+#location-lbl .icon-addon.addon-md .fa,
+#location-lbl .icon-addon .fa {
   position: absolute;
   z-index: 2;
   left: 10px;
@@ -512,41 +574,180 @@ footer .copyright {
   margin-left: -2.5px;
   text-align: center;
   padding: 10px 0;
-  top: -11px;
+  top: 30px;
 }
-
-/* line 68, ../sass/layouts/_forms.scss */
-.icon-addon.addon-sm .form-control {
+/* line 69, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon.addon-sm .form-control {
   height: 30px;
   padding: 5px 10px 5px 28px;
   font-size: 12px;
   line-height: 1.5;
 }
-
-/* line 75, ../sass/layouts/_forms.scss */
-.icon-addon.addon-lg .fa,
-.icon-addon.addon-lg .glyphicon {
+/* line 76, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon.addon-lg .fa,
+#location-lbl .icon-addon.addon-lg .glyphicon {
   font-size: 18px;
   margin-left: 0;
   left: 11px;
   top: -12px;
 }
-
-/* line 83, ../sass/layouts/_forms.scss */
-.icon-addon.addon-md .form-control,
-.icon-addon .form-control {
+/* line 84, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon.addon-md .form-control,
+#location-lbl .icon-addon .form-control {
   padding-left: 30px;
   float: left;
   font-weight: normal;
 }
-
-/* line 90, ../sass/layouts/_forms.scss */
-.icon-addon.addon-sm .fa,
-.icon-addon.addon-sm .glyphicon {
+/* line 91, ../sass/layouts/_forms.scss */
+#location-lbl .icon-addon.addon-sm .fa,
+#location-lbl .icon-addon.addon-sm .glyphicon {
   margin-left: 0;
   font-size: 12px;
   left: 5px;
   top: -1px;
+}
+
+/* line 101, ../sass/layouts/_forms.scss */
+#color-picker ::placeholder {
+  color: #007BFF;
+}
+
+/* bootstrap-tagsinput.css file - add in local */
+/* line 110, ../sass/layouts/_forms.scss */
+.tagsinput, .tagsinput * {
+  box-sizing: border-box;
+}
+
+/* line 113, ../sass/layouts/_forms.scss */
+.tagsinput {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #556270;
+  padding: 5px 5px 0;
+  border-radius: 2px;
+}
+
+/* line 129, ../sass/layouts/_forms.scss */
+.tagsinput.focus {
+  border-color: #ccc;
+}
+
+/* line 131, ../sass/layouts/_forms.scss */
+.tagsinput .tag {
+  position: relative;
+  background: #007BFF;
+  display: block;
+  max-width: 100%;
+  word-wrap: break-word;
+  color: #fff;
+  padding: 5px 25px 5px 5px;
+  border-radius: 2px;
+  margin: 0 5px 5px 0;
+}
+
+/* line 142, ../sass/layouts/_forms.scss */
+.tagsinput .tag .tag-remove {
+  position: absolute;
+  background: 0 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  padding: 0;
+  border: 0;
+}
+
+/* line 158, ../sass/layouts/_forms.scss */
+.tagsinput .tag .tag-remove:after, .tagsinput .tag .tag-remove:before {
+  background: #fff;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 2px;
+  top: 14px;
+  left: 10px;
+  content: "";
+}
+
+/* line 168, ../sass/layouts/_forms.scss */
+.tagsinput .tag .tag-remove:before {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+/* line 172, ../sass/layouts/_forms.scss */
+.tagsinput .tag .tag-remove:after {
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+/* line 176, ../sass/layouts/_forms.scss */
+.tagsinput div {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* line 182, ../sass/layouts/_forms.scss */
+.tagsinput div input {
+  background: 0 0;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px;
+  border: 0;
+  margin: 0 5px 5px 0;
+}
+
+/* line 192, ../sass/layouts/_forms.scss */
+.tagsinput div input.error {
+  color: #ff6b6b;
+}
+
+/* line 193, ../sass/layouts/_forms.scss */
+.tagsinput div input::-ms-clear {
+  display: none;
+}
+
+/* line 194, ../sass/layouts/_forms.scss */
+.tagsinput div input::-webkit-input-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* line 195, ../sass/layouts/_forms.scss */
+.tagsinput div input:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* line 196, ../sass/layouts/_forms.scss */
+.tagsinput div input::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* line 197, ../sass/layouts/_forms.scss */
+.tagsinput div input:-ms-input-placeholder {
+  color: #ccc;
+  opacity: 1;
 }
 
 /* Header styles */

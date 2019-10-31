@@ -26,71 +26,172 @@
     } 
 }
 
-.fa-map-marker {
-    float: right;
-    margin-right: 6px;
-    margin-top: -26px;
-    position: relative;
-    z-index: 2;  
+#location-lbl {
+    .fa-map-marker {
+        float: right;
+        margin-right: 6px;
+        margin-top: -26px;
+        position: relative;
+        z-index: 2;  
+    }
+    
+    .icon-addon {
+        position: relative;
+        color: #555;
+        display: block;
+    }
+    
+    .icon-addon:after,
+    .icon-addon:before {
+        display: table;
+        content: " ";
+    }
+    
+    .icon-addon:after {
+        clear: both;
+    }
+    
+    .icon-addon.addon-md .glyphicon,
+    .icon-addon .glyphicon, 
+    .icon-addon.addon-md .fa,
+    .icon-addon .fa {
+        position: absolute;
+        z-index: 2;
+        left: 10px;
+        font-size: 14px;
+        width: 20px;
+        margin-left: -2.5px;
+        text-align: center;
+        padding: 10px 0;
+        top: 30px;
+    }
+    
+    .icon-addon.addon-sm .form-control {
+        height: 30px;
+        padding: 5px 10px 5px 28px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .icon-addon.addon-lg .fa,
+    .icon-addon.addon-lg .glyphicon {
+        font-size: 18px;
+        margin-left: 0;
+        left: 11px;
+        top: -12px;
+    }
+    
+    .icon-addon.addon-md .form-control,
+    .icon-addon .form-control {
+        padding-left: 30px;
+        float: left;
+        font-weight: normal;
+    }
+    
+    .icon-addon.addon-sm .fa,
+    .icon-addon.addon-sm .glyphicon {
+        margin-left: 0;
+        font-size: 12px;
+        left: 5px;
+        top: -1px
+    }
 }
 
-.icon-addon {
-    position: relative;
-    color: #555;
-    display: block;
+#color-picker {
+    ::placeholder {
+        color: $primary-color;
+    }
 }
 
-.icon-addon:after,
-.icon-addon:before {
-    display: table;
-    content: " ";
-}
 
-.icon-addon:after {
-    clear: both;
-}
+/* bootstrap-tagsinput.css file - add in local */
 
-.icon-addon.addon-md .glyphicon,
-.icon-addon .glyphicon, 
-.icon-addon.addon-md .fa,
-.icon-addon .fa {
-    position: absolute;
-    z-index: 2;
-    left: 10px;
-    font-size: 14px;
-    width: 20px;
-    margin-left: -2.5px;
-    text-align: center;
-    padding: 10px 0;
-    top: -11px;
-}
 
-.icon-addon.addon-sm .form-control {
-    height: 30px;
-    padding: 5px 10px 5px 28px;
-    font-size: 12px;
-    line-height: 1.5;
-}
+.tagsinput,.tagsinput *{box-sizing:border-box}
 
-.icon-addon.addon-lg .fa,
-.icon-addon.addon-lg .glyphicon {
-    font-size: 18px;
-    margin-left: 0;
-    left: 11px;
-    top: -12px;
-}
 
-.icon-addon.addon-md .form-control,
-.icon-addon .form-control {
-    padding-left: 30px;
-    float: left;
-    font-weight: normal;
+.tagsinput {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    background:$white;
+    font-family:sans-serif;
+    font-size:13px;
+    line-height:20px;
+    color:#556270;
+    padding:5px 5px 0;
+    border-radius:2px;
 }
+.tagsinput.focus{border-color:#ccc}
 
-.icon-addon.addon-sm .fa,
-.icon-addon.addon-sm .glyphicon {
-    margin-left: 0;
-    font-size: 12px;
-    left: 5px;
-    top: -1px
+.tagsinput .tag{
+    position:relative;
+    background:$primary-color;
+    display:block;
+    max-width:100%;
+    word-wrap:break-word;
+    color: $white;
+    padding:5px 25px 5px 5px;
+    border-radius:2px;
+    margin:0 5px 5px 0;
 }
+.tagsinput .tag .tag-remove{
+    position:absolute;
+    background:0 0;
+    display:block;
+    width:30px;
+    height:30px;
+    top:0;
+    right:0;
+    cursor:pointer;
+    text-decoration:none;
+    text-align:center;
+    color: $white;
+    line-height:30px;
+    padding:0;
+    border:0
+}
+.tagsinput .tag .tag-remove:after,.tagsinput .tag .tag-remove:before {
+    background: $white;
+    position:absolute;
+    display:block;
+    width:10px;
+    height:2px;
+    top:14px;
+    left:10px;
+    content:''
+}
+.tagsinput .tag .tag-remove:before{
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg)
+}
+.tagsinput .tag .tag-remove:after {
+    -webkit-transform:rotateZ(-45deg);
+    transform:rotateZ(-45deg)
+}
+.tagsinput div{
+    -webkit-box-flex:1;
+    -webkit-flex-grow:1;
+    -ms-flex-positive:1;
+    flex-grow:1
+}
+.tagsinput div input{
+    background:0 0;
+    display:block;
+    width:100%;
+    font-size:14px;
+    line-height:20px;
+    padding:5px;
+    border:0;
+    margin:0 5px 5px 0;
+}
+.tagsinput div input.error{color:#ff6b6b}
+.tagsinput div input::-ms-clear{display:none}
+.tagsinput div input::-webkit-input-placeholder{color:#ccc;opacity:1}
+.tagsinput div input:-moz-placeholder{color:#ccc;opacity:1}
+.tagsinput div input::-moz-placeholder{color:#ccc;opacity:1}
+.tagsinput div input:-ms-input-placeholder{color:#ccc;opacity:1}

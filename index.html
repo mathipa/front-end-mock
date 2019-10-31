@@ -21,6 +21,8 @@
 	<!-- TODO load the font awesome locally-->
 	<link rel="stylesheet" href="css/fontawesome.css" type="text/css" > 
 	<link rel="stylesheet" href="stylesheets/main.css" rel="stylesheet">
+
+	<script data-ad-client="ca-pub-7980466248519262" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	
 </head>
 <body>
@@ -114,9 +116,8 @@
 						<form name="search" action="search.php" id="search-car">
 							<div class="form-group">
 								<label for="condition">Condition</label>
-								<input type="text" class="form-control form-control-sm" id="condition"
-								 aria-describedby="condition">
-
+								 <input id="form-tags-1"  name="tags-1" id="condition" type="text" value="Used" >
+								 
 								 <div class="form-group">
 										<label for="price">Price</label>
 										<div id="range">
@@ -133,28 +134,24 @@
 											</div>
 										</div>
 									</div>
-
-							  <div class="form-group location">
+							  <div class="form-group location" id="location-lbl">
 									<label for="location">Location</label>
 									<div class="icon-addon addon-md">
 											<input type="text" placeholder="Pretoria, Gauteng..." class="form-control form-control-sm" id="location">
 												<label for="email" class="glyphicon fa fa-map-marker" title="location"></label>		
 										</div>
-								</div>
-
-
+									</div>
 							  <div class="form-group">
 								<label for="vehicleDetails">Vehicle Details</label>
+								
+								<input id="form-tags-2" name="tags-1" id="condition" type="text" value="Coupe" >
 								<input type="text" class="form-control" id="vehicleDetails"
 								 aria-describedby="vehicleDetailsHelp">
 								 <input type="text" class="form-control" id="vehicleDetails"
 								 aria-describedby="vehicleDetailsHelp">
 								 <input type="text" class="form-control" id="vehicleDetails"
 								 aria-describedby="vehicleDetailsHelp">
-								 <input type="text" class="form-control" id="vehicleDetails"
-								 aria-describedby="vehicleDetailsHelp">
 							  </div>
-
 							  <div class="form-group">
 									<label for="year">Year</label>
 									<div id="range">
@@ -171,7 +168,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="form-group">
 										<label for="milage">Milage</label>
 										<div id="range">
@@ -191,23 +187,23 @@
 
 								<div class="form-group">
 									<label for="fuelType">Fuel Type</label>
-									<input type="text" class="form-control form-control-sm" id="location"
+									<input type="text" class="form-control form-control-sm" id="fueltype"
 										aria-describedby="location" placeholder="Fuel..">
 								</div>
 
 								<div class="form-group">
 									<label for="fuelType">Drivetrain</label>
-									<input type="text" class="form-control form-control-sm" id="location"
+									<input type="text" class="form-control form-control-sm" id="drivetrain"
 										aria-describedby="location" placeholder="Drivetrain...">
 								</div>
 								<div class="form-group">
 									<label for="fuelType">Transmission type</label>
-									<input type="text" class="form-control form-control-sm" id="location"
+									<input type="text" class="form-control form-control-sm" id="transmission"
 											aria-describedby="location" placeholder="Transmission....">
 								</div>
 								<div class="form-group">
 									<label for="fuelType">Color</label>
-									<input type="text" class="form-control form-control-sm" id="location"
+									<input type="type" class="form-control form-control-sm" id="color" 
 												aria-describedby="location" placeholder="Choose Colour....">
 								</div>
 							</form>
@@ -315,7 +311,7 @@
 					</div>
 					<div class="vehicle-description">
 						<div class="title-description">
-							VW POlo 1.6 Confortline 2013<br>
+							VW Polo 1.6 Confortline 2013<br>
 							Hatchback Car for sale 640000kms<br>
 							Full Service history plus Extras
 						</div>
@@ -360,17 +356,38 @@
 							<div class="dealerName"><a href="#">
 								<i class="fa fa-certificate"></i> McCarthy VW Umhlanga</a></div>
 							<div><i class="fa fa-globe"></i> Umhlanga Ridge, KwaZulu-Natal</div>
-							<div class="btn btn-block phone-link button-link btn-view-number">
-									<a href="tel:+27 764631679"><i class="fa fa-phone">
+							<a class="btn btn-block phone-link button-link btn-view-number" data-toggle="collapse" href="#fullContact">
+									<i class="fa fa-phone">
 									</i> 060..View number</a>
 							</div>
+							  <div class="collapse" id="fullContact">
+								<div class="card card-body">
+								 +27 060 1254 4521
+								</div>
+							  </div>
 						</div>
 						<div class="seller-message">
 							<span>Send Seller a message</span>
-							<span class="pull-right"><a href="#">Show more</a></span>
+							<span class="pull-right"><a data-toggle="collapse" href="#oparatingHours">Show more</a></span>
 							<button type="button" class="btn btn-default enquire">
 								<i class="fa fa-envelope"></i> 
 								 is this available?</button>
+
+								 <div class="collapse" id="oparatingHours">
+									<div class="card card-body">
+										<div class="business-hours">
+											<h4 class="title">Opening Hours</h4>
+											<ul class="list-unstyled opening-hours">
+												<li>Sunday <span class="pull-right">Closed</span></li>
+												<li>Monday <span class="pull-right">9:00-22:00</span></li>
+												<li>Tuesday <span class="pull-right">9:00-22:00</span></li>
+												<li>Wednesday <span class="pull-right">9:00-22:00</span></li>
+												<li>Thursday <span class="pull-right">9:00-22:00</span></li>
+												<li>Friday <span class="pull-right">9:00-23:30</span></li>
+												<li>Saturday <span class="pull-right">14:00-23:30</span></li>
+											</ul>
+									</div>
+								  </div>  
 						</div>
 
 						<div class="callto-action-btn">
@@ -382,14 +399,39 @@
 							<div class="user-cta">
 								<div class="item"><a href="#"><i class="fa fa-star"></i> Wishlist</a></div>
 								<div class="item"><a href="#"><i class="fa fa-bell"></i> Get Alerts</a></div>
-								<div class="item"><a href="#"><i class="fa fa-exclamation-circle"></i> Report Ad</a></div>
+								<div class="item" data-toggle="modal" data-target="#reportAdModal" data-whatever="@mdo"data-toggle="modal" 
+								data-target="#reportAdModal" data-whatever="@mdo"><i class="fa fa-exclamation-circle"></i> Report Ad</div>
 							</div>
 					</div>
-
-					<div class="row">
-						
-					</div>
-
+					<!--Report AD modal-->
+					<div class="modal fade" id="reportAdModal" tabindex="-1" role="dialog" aria-labelledby="AdLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="AdLabel">New message</h5>
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							  </button>
+							</div>
+							<div class="modal-body">
+							  <form>
+								<div class="form-group">
+								  <label for="recipient-name" class="col-form-label">Add title:</label>
+								  <input type="text" class="form-control" id="recipient-name">
+								</div>
+								<div class="form-group">
+								  <label for="message-text" class="col-form-label">Description / Message:</label>
+								  <textarea class="form-control" id="message-text"></textarea>
+								</div>
+							  </form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							  <button type="button" class="btn btn-primary">Send message</button>
+							</div>
+						  </div>
+						</div>
+					  </div>
 				</div>
 			</div>
 		</div>
@@ -435,7 +477,9 @@
 													</div>
 												</div>
 												<div class="card-dealerAdress">
-														<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+														<i class="fa fa-map-marker"></i>
+														<a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+															 NorthCliff Auto</a>
 												</div>
 										</div>
 									</div>
@@ -468,7 +512,8 @@
 														</div>
 													</div>
 													<div class="card-dealerAdress">
-															<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+															<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used" target="_blank">  
+																NorthCliff Auto Used Cars</a>
 													</div>	
 											</div>
 									</div>
@@ -498,7 +543,8 @@
 													<i class="fa fa-cogs"></i>1.8 turbo</div>
 											</div>
 											<div class="card-dealerAdress">
-												<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+												<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+													NorthCliff Auto</a>
 											</div>	
 											</div>
 									</div>
@@ -531,7 +577,8 @@
 												</div>
 												</div>
 												<div class="card-dealerAdress">
-													<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+													<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+														NorthCliff Auto</a>
 												</div>
 										</div>
 									</div>
@@ -556,7 +603,8 @@
 												<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
 											</div>
 											<div class="card-dealerAdress">
-												<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+												<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+													NorthCliff Auto</a>
 											</div>
 										</div>
 									</div>
@@ -602,7 +650,8 @@
 											<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
 										</div>
 										<div class="card-dealerAdress">
-											<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+												NorthCliff Auto</a>
 											</div>
 										</div>
 									</div>
@@ -626,7 +675,8 @@
 												<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
 											</div>
 											<div class="card-dealerAdress">
-											<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											<i class="fa fa-map-marker"></i><a href="https://maps.google.com/?q=NorthCliff Auto Used Cars" target="_blank"> 
+												NorthCliff Auto</a>
 											</div>					
 										</div>
 									</div>
@@ -692,5 +742,6 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script> 
 	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>

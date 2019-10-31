@@ -1,8 +1,8 @@
 @import 'base/variables';
 
 
-    /*Top check blocks */
-   
+
+/*Top check blocks */   
 .flex-container {
     padding: 0;
     margin: 0;
@@ -39,5 +39,43 @@
         color: $white;
     }
   }
+
+  /* opening hours */
+    .business-hours {
+        background: $primary-color; 
+        padding: 25px 14px;
+        margin-top: -15px;
+        position: relative;
+    }
+    .business-hours:before{
+    content: '';
+        width: 23px;
+        height: 23px;
+        background: $primary-color;
+        position: absolute;
+        top: 5px;
+        left: -12px;
+        transform: rotate(-45deg);
+        z-index: -1;
+    }
+    .business-hours .title {
+        font-size: 20px;
+        color: $white;
+        text-transform: uppercase;
+        padding-left: 5px;
+        border-left: 4px solid $seconday-color; 
+    }
+    .business-hours li {
+        color:$white;
+        line-height: 30px;
+        border-bottom: 1px solid $white; 
+    }
+    .business-hours li:last-child {
+        border-bottom: none; 
+    }
+    .business-hours .opening-hours li.today {
+        color: $yellow-color;
+        font-weight: bold; 
+    }
 
  

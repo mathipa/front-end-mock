@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: $font-normal;
     line-height: 1.1;
-    color: #000;
+    color: $black;
     background-color: #eee;
 }
 
@@ -11,9 +11,13 @@ body {
 }
 
 .link {
-    color: #fff;
+    color: $white;
 }
 
 a:hover {
  text-decoration: none;   
+}
+
+.button-link a {
+    color: $white;
 }
