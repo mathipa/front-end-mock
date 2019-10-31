@@ -1,0 +1,28 @@
+/* Buttons */
+
+@import 'base/variables';
+
+.post-btn {
+    margin-bottom: 15px; 
+}
+
+.btn-post-ad {
+    background-color: $blueviolet-color;
+    font-size: $font-normal;
+    color: $white;
+
+    a:hover{
+        color: $white;
+    }
+}
+
+.btn-view-number {
+    background-color: $seconday-color;
+    font-size: $font-normal;
+}
+
+.btn-mail-seller {
+    background-color: $primary-color;
+    font-size: $font-normal;
+
+}

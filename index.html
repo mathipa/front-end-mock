@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Mathipa Makgato" />
+	<meta property="og:type" content="website">
+
+	<title>Dotslash Mockup-  Dot Slash - Digital Agency</title>
+
+	<meta property="og:url" content="Dotslash Website">
+	<meta property="og:site_name" content="DotSlash Website" />
+	<meta property="og:title" content="DotSlash:: Mockup">
+	<meta property="og:image" content="img/title-website.png">
+	<meta name="description" content="Digital Agency & Software House">
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- TODO load the font awesome locally-->
+	<link rel="stylesheet" href="css/fontawesome.css" type="text/css" > 
+	<link rel="stylesheet" href="stylesheets/main.css" rel="stylesheet">
+	
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="header-main">
+	<nav class="navbar navbar-expand-lg navbar-dark static-top">
+		<a class="navbar-brand" href="index.html">
+			<img src="img/logo/logo-brand.png" alt="">
+			 </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			 </button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">New & Used Cars<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Bikes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Create Free Ad</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Request a Car</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Trade In</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-gift"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-users"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-envelope"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-bell"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-star"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html"><i class="fa fa-lock"></i></a>
+						</li>
+					</ul>
+				</div>
+	</nav>	
+</div>
+
+
+<!-- Top section-->
+<div class="container">
+	<section class="post-ad-search">
+		<div class="cointaner">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="post-btn hidden-xs">
+						<a href="#" class="btn btn-post-ad btn-block">
+							<i class="fa fa-plus"></i>
+							Post a FREE ad</a>
+					</div>
+				</div>
+				<div class="col-md-9" id="search-box">
+					<form class="search">
+						<div class="input-group md-form form-sm form-2 pl-0">
+							<input class="form-control my-0 py-1" type="text" placeholder="Search in vehicles..." aria-label="Search">
+								<div class="input-group-append">
+									<span class="input-group-text lighten-2 search-input"><i class="fa fa-search text-grey"
+										aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--- Three Column Section -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<!--- Search Vehicle form -->
+				<div class="col-md-3">
+					<div class="search-text block">
+						<h6><i class="fa fa-search"></i> Search  Cars</h6>
+					</div>
+						<form name="search" action="search.php" id="search-car">
+							<div class="form-group">
+								<label for="condition">Condition</label>
+								<input type="text" class="form-control form-control-sm" id="condition"
+								 aria-describedby="condition">
+
+								 <div class="form-group">
+										<label for="price">Price</label>
+										<div id="range">
+											<div class="col-xs-2 input-group">
+												<input type="text" id="from" class="form-control-sm form-control"
+												placeholder="Min..."/>
+											</div>
+											<div class="col-xs-1 text-center range-separator">
+												<label for="to">to</label>
+											</div>
+											<div class="col-xs-2 input-group">
+												<input type="text" id="to" class="form-control form-control-sm"
+												placeholder="Max..."/>
+											</div>
+										</div>
+									</div>
+
+							  <div class="form-group location">
+									<label for="location">Location</label>
+									<div class="icon-addon addon-md">
+											<input type="text" placeholder="Pretoria, Gauteng..." class="form-control form-control-sm" id="location">
+												<label for="email" class="glyphicon fa fa-map-marker" title="location"></label>		
+										</div>
+								</div>
+
+
+							  <div class="form-group">
+								<label for="vehicleDetails">Vehicle Details</label>
+								<input type="text" class="form-control" id="vehicleDetails"
+								 aria-describedby="vehicleDetailsHelp">
+								 <input type="text" class="form-control" id="vehicleDetails"
+								 aria-describedby="vehicleDetailsHelp">
+								 <input type="text" class="form-control" id="vehicleDetails"
+								 aria-describedby="vehicleDetailsHelp">
+								 <input type="text" class="form-control" id="vehicleDetails"
+								 aria-describedby="vehicleDetailsHelp">
+							  </div>
+
+							  <div class="form-group">
+									<label for="year">Year</label>
+									<div id="range">
+										<div class="col-xs-2 input-group">
+											<input type="text" id="yearfrom" class="form-control-sm form-control"
+											placeholder="From..."/>
+										</div>
+										<div class="col-xs-1 text-center range-separator">
+											<label for="to">to</label>
+										</div>
+										<div class="col-xs-2 input-group">
+											<input type="text" id="yearto" class="form-control form-control-sm"
+											placeholder="To..."/>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+										<label for="milage">Milage</label>
+										<div id="range">
+											<div class="col-xs-2 input-group">
+												<input type="text" id="milageMin" class="form-control-sm form-control"
+												placeholder="Min..."/>
+											</div>
+											<div class="col-xs-1 text-center range-separator">
+												<label for="to">to</label>
+											</div>
+											<div class="col-xs-2 input-group">
+												<input type="text" id="MilageMax" class="form-control form-control-sm"
+												placeholder="Max..."/>
+											</div>
+										</div>
+									</div>
+
+								<div class="form-group">
+									<label for="fuelType">Fuel Type</label>
+									<input type="text" class="form-control form-control-sm" id="location"
+										aria-describedby="location" placeholder="Fuel..">
+								</div>
+
+								<div class="form-group">
+									<label for="fuelType">Drivetrain</label>
+									<input type="text" class="form-control form-control-sm" id="location"
+										aria-describedby="location" placeholder="Drivetrain...">
+								</div>
+								<div class="form-group">
+									<label for="fuelType">Transmission type</label>
+									<input type="text" class="form-control form-control-sm" id="location"
+											aria-describedby="location" placeholder="Transmission....">
+								</div>
+								<div class="form-group">
+									<label for="fuelType">Color</label>
+									<input type="text" class="form-control form-control-sm" id="location"
+												aria-describedby="location" placeholder="Choose Colour....">
+								</div>
+							</form>
+						</div>
+				</div>
+				<!--- Image Slider -->
+				<div class="col-md-6">
+					<div class="row">
+						<ul class="flex-container">
+							<li class="flex-item">
+								<div class="check-text">Find out about the
+									ins and outs of financing a new or used vehicle.</p>
+								<a href="#" class="link">Read more</a>
+							</li>
+							<li class="flex-item">
+								<div class="check-text">Got questions about cars?
+										#AskAutoTrader — our experts are waiting for you!</div>
+										<br>
+									<a href="#" class="link">Read more</a>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+							<!--Slides-->
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="img/sliders/bmw.jpeg" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="img/sliders/bmw2.jpeg" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="img/sliders/bmw3.jpeg" alt="Third slide">
+								</div>
+							</div>
+									<!--/.Slides-->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-thumb" data-slide-to="0" class="active"> 
+									<img class="d-block w-100" src="img/sliders/smbmw1.jpeg" class="img-fluid"></li>
+								<li data-target="#carousel-thumb" data-slide-to="1">
+									<img class="d-block w-100" src="img/sliders/bmw2.jpeg" class="img-fluid"></li>
+								<li data-target="#carousel-thumb" data-slide-to="2">
+									<img class="d-block w-100" src="img/sliders/bmw3.jpeg" class="img-fluid"></li>
+							</ol>
+						</div>
+					</div>
+					<!--Car brands -->
+					<div class="col-md-12 car-brands">
+						<h6>Car Brands</h6> 
+							<ul class="list-group">
+							
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/vw-logo.jpg?s=small" alt="VW" style="max-width:20px;"> VW
+									<span class="badge badge-primary badge-pill pull-right">14</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/toyota-logo.jpg?s=small" alt="Toyota" style="max-width:20px;"> Toyota
+									<span class="badge badge-primary badge-pill pull-right">141</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/ford-logo.jpg?s=small" alt="Ford" style="max-width:20px;"> Ford
+									<span class="badge badge-primary badge-pill pull-right">301</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/hyundai-logo.jpg?s=small" alt="Hyundai" style="max-width:20px;"> Hyundai
+									<span class="badge badge-primary badge-pill pull-right">14</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/nissan-logo.jpg?s=small" alt="Nissan" style="max-width:20px;"> Nissan
+									<span class="badge badge-primary badge-pill pull-right">32</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/bmw-logo.jpg?s=small" alt="BMW" style="max-width:20px;"> BMW
+									<span class="badge badge-primary badge-pill pull-right">50</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/mercedes-benz-logo.jpg?s=small" alt="Mercedes Benz" style="max-width:20px;"> Mercedes Benz
+									<span class="badge badge-primary badge-pill pull-right">75</span>
+								</li>
+
+								<li class="list-group-item"> 
+									<img src="https://amcdn.co.za/cars/kia-logo.jpg?s=small" alt="Kia" style="max-width:20px;"> Kia
+									<span class="badge badge-primary badge-pill pull-right">765</span>
+								</li>
+							</ul>
+					</div>
+
+				</div>
+
+				<!--- Car info / Results -->
+				<div class="col-md-3" id="vehicle-details">
+					<div class="breadcrump-menu">
+						<p class="menu-trail">
+							<a href="">Used</a> <i class="fa fa-angle-double-right"></i>
+							<a href="">VW</a><i class="fa fa-angle-double-right"></i>
+							<a href=""></a>Golf</a>
+						</p>
+					</div>
+					<div class="vehicle-description">
+						<div class="title-description">
+							VW POlo 1.6 Confortline 2013<br>
+							Hatchback Car for sale 640000kms<br>
+							Full Service history plus Extras
+						</div>
+						<div class="location-metadata location">
+							<span><i class="fa fa-globe"></i>
+								6/8 Sunset Crescent, Umhlanga Ridge &nbsp;
+								KwaZulu Natal &nbsp; <span class="dot"></span>
+								15 hours ago
+							</span>
+						</div>
+						<div class="vehicle-price">
+							<p class="price">R 139, 995</p>
+						</div>
+						<div class="vehicle-detailed-info">
+								<div class="item">Condition</div>
+								<div class="item item-value">Used</div>
+								<div class="item">Transmission</div>
+								<div class="item item-value">Automatic</div>
+								<div class="item">Engine</div>
+								<div class="item item-value">1.8 turbo</div>
+								<div class="item">Fuel Type</div>
+								<div class="item item-value">Petrol</div>
+								<div class="item">Milage</div>
+								<div class="item item-value">6500 km</div>
+								<div class="item">Year</div>
+								<div class="item item-value">2009</div>
+								<div class="item">Color</div>
+								<div class="item item-value">Red</div>
+								<div class="item">Drivetrain</div>
+								<div class="item item-value">FWD</div>
+						</div>
+						<div class="vehicle-extra-info">
+							<p class="vehicle-xtrainfo">
+								Extras: ABS, Alloy Wheels, Fog Lights, Electric mirros,
+								Power Steering, Electric Windows, Air Bag, Sunroof, Traction Control,
+								Air... <br>
+								<a href="#">More</a>
+							</p>
+						</div>
+						<div class="seller-info">
+							<p class="location seller-information">Seller information</p>
+							<div class="dealerName"><a href="#">
+								<i class="fa fa-certificate"></i> McCarthy VW Umhlanga</a></div>
+							<div><i class="fa fa-globe"></i> Umhlanga Ridge, KwaZulu-Natal</div>
+							<div class="btn btn-block phone-link button-link btn-view-number">
+									<a href="tel:+27 764631679"><i class="fa fa-phone">
+									</i> 060..View number</a>
+							</div>
+						</div>
+						<div class="seller-message">
+							<span>Send Seller a message</span>
+							<span class="pull-right"><a href="#">Show more</a></span>
+							<button type="button" class="btn btn-default enquire">
+								<i class="fa fa-envelope"></i> 
+								 is this available?</button>
+						</div>
+
+						<div class="callto-action-btn">
+							<div class="btn btn-mail-seller btn-block button-link">
+								<a href="mailto:mathipa87@gmail.com"> <i class="fa fa-comment">
+								</i> Message Seller</a>
+							</div>
+						</div>
+							<div class="user-cta">
+								<div class="item"><a href="#"><i class="fa fa-star"></i> Wishlist</a></div>
+								<div class="item"><a href="#"><i class="fa fa-bell"></i> Get Alerts</a></div>
+								<div class="item"><a href="#"><i class="fa fa-exclamation-circle"></i> Report Ad</a></div>
+							</div>
+					</div>
+
+					<div class="row">
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!---More from Dealer Section -->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid google-ad" alt="google ad" src="img/adsense.png">
+				</div>
+				<div class="col-md-9" id="card-wrapper">
+						<div class="container-fluid padding">
+								<p class="dealer-more">More from the <a href="#">Delear</a></p>
+							<div class="row padding">
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top" alt="golf 6" src="img/morevehicles/vw.jpeg">
+										<div class="card-body">
+												<div class="price-details">
+														<span class="small-modal">R238,995</span>
+														<span class="small-modal">15 hrs ago</span>
+												</div>
+											<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+												Hatchback Car for Sale...</h4>
+												<p class="card-text">
+													Radio MP3 Player touch screen display, USB AUX port, Air ...
+												</p>
+												<div class="card-more-extras">
+														<div class="item">
+															<i class="fa fa-calendar"></i> 2019
+														</div>
+														<div class="item icon-svg">
+															<img src="img/icons/fuel-11.svg"> Petrol 
+														</div>
+														<div class="item">
+															<i class="fa fa-car"></i> 6500 km
+														</div>
+														<div class="item">
+															<i class="fa fa-cogs"></i>1.8 turbo
+													</div>
+												</div>
+												<div class="card-dealerAdress">
+														<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+												</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+											<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw3.jpeg">
+											<div class="card-body">
+													<div class="price-details">
+															<span class="small-modal">R238,995</span>
+															<span class="small-modal">15 hrs ago</span>
+													</div>
+												<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+													Hatchback Car for Sale...</h4>
+													<p class="card-text">
+														Radio MP3 Player touch screen display, USB AUX port, Air ...
+													</p>
+													<div class="card-more-extras">
+															<div class="item">
+																<i class="fa fa-calendar"></i> 2019
+															</div>
+															<div class="item icon-svg">
+																<img src="img/icons/fuel-11.svg"> Petrol 
+															</div>
+															<div class="item">
+																<i class="fa fa-car"></i> 6500 km
+															</div>
+															<div class="item">
+																<i class="fa fa-cogs"></i>1.8 turbo
+														</div>
+													</div>
+													<div class="card-dealerAdress">
+															<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+													</div>	
+											</div>
+									</div>
+									</div>
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top" alt="golf 6" src="img/morevehicles/vw.jpeg">
+										<div class="card-body">
+												<div class="price-details">
+													<span class="small-modal">R238,995</span>
+													<span class="small-modal">15 hrs ago</span>
+												</div>
+											<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+												Hatchback Car for Sale...</h4>
+												<p class="card-text">
+															Radio MP3 Player touch screen display, USB AUX port, Air ...
+												</p>
+											<div class="card-more-extras">
+												<div class="item">
+													<i class="fa fa-calendar"></i> 2019
+												</div>
+													<div class="item icon-svg">
+														<img src="img/icons/fuel-11.svg"> Petrol </div>
+													<div class="item">
+														<i class="fa fa-car"></i> 6500 km</div>
+													<div class="item">
+													<i class="fa fa-cogs"></i>1.8 turbo</div>
+											</div>
+											<div class="card-dealerAdress">
+												<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											</div>	
+											</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw3.jpeg">
+										<div class="card-body">
+												<div class="price-details">
+													<span class="small-modal">R238,995</span>
+													<span class="small-modal">15 hrs ago</span>
+												</div>
+											<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+												Hatchback Car for Sale...</h4>
+											<p class="card-text">
+												Radio MP3 Player touch screen display, USB AUX port, Air ...
+											</p>
+												<div class="card-more-extras">
+													<div class="item">
+														<i class="fa fa-calendar"></i> 2019
+												</div>
+												<div class="item icon-svg">
+													<img src="img/icons/fuel-11.svg"> Petrol 
+												</div>
+													<div class="item">
+														<i class="fa fa-car"></i> 6500 km
+												</div>
+												<div class="item">
+													<i class="fa fa-cogs"></i>1.8 turbo
+												</div>
+												</div>
+												<div class="card-dealerAdress">
+													<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+												</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw.jpeg">
+										<div class="card-body">
+												<div class="price-details">
+														<span class="small-modal">R238,995</span>
+														<span class="small-modal">15 hrs ago</span>
+												</div>
+											<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+												Hatchback Car for Sale...</h4>
+												<p class="card-text">Radio MP3 Player touch screen display, USB AUX port, Air ...</p>
+											<div class="card-more-extras">
+												<div class="item">
+													<i class="fa fa-calendar"></i> 2019</div>
+												<div class="item icon-svg"><img src="img/icons/fuel-11.svg"> Petrol </div>
+												<div class="item"><i class="fa fa-car"></i> 6500 km	</div>
+												<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
+											</div>
+											<div class="card-dealerAdress">
+												<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw3.jpeg">
+									<div class="card-body">
+											<div class="price-details">
+													<span class="small-modal">R238,995</span>
+													<span class="small-modal">15 hrs ago</span>
+											</div>
+											<h4 class="card-title">
+												<a href="#">VW Polo</a> 1.6 Confortline 2013 Hatchback Car for Sale...</h4>
+												<p class="card-text">Radio MP3 Player touch screen display, USB AUX port, Air ...</p>
+										<div class="card-more-extras">
+											<div class="item"><i class="fa fa-calendar"></i> 2019</div>
+											<div class="item icon-svg"><img src="img/icons/fuel-11.svg"> Petrol </div>
+											<div class="item"><i class="fa fa-car"></i> 6500 km</div>
+											<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
+										</div>
+										<div class="card-dealerAdress">
+											<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw.jpeg">
+										<div class="card-body">
+												<div class="price-details">
+														<span class="small-modal">R238,995</span>
+														<span class="small-modal">15 hrs ago</span>
+												</div>
+											<h4 class="card-title"><a href="#">VW Polo</a> 1.6 Confortline 2013
+												Hatchback Car for Sale...</h4>
+											<p class="card-text">Radio MP3 Player touch screen display, USB AUX port, Air ...</p>
+											<div class="card-more-extras">
+											<div class="item"><i class="fa fa-calendar"></i> 2019</div>
+											<div class="item icon-svg"><img src="img/icons/fuel-11.svg"> Petrol 	</div>
+											<div class="item"><i class="fa fa-car"></i> 6500 km</div>
+											<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
+										</div>
+										<div class="card-dealerAdress">
+											<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card">
+										<img class="card-img-top"  alt="golf 6" src="img/morevehicles/vw3.jpeg">
+									<div class="card-body">
+											<div class="price-details">
+												<span class="small-modal">R238,995</span>
+												<span class="small-modal">15 hrs ago</span>
+											</div>
+										<h4 class="card-title">
+											<a href="#">VW Polo</a> 1.6 Confortline 2013 Hatchback Car for Sale...</h4>
+											<p class="card-text">Radio MP3 Player touch screen display, USB AUX port, Air ...</p>
+											<div class="card-more-extras">
+												<div class="item"><i class="fa fa-calendar"></i> 2019</div>
+												<div class="item icon-svg"><img src="img/icons/fuel-11.svg"> Petrol 
+												</div>
+												<div class="item"><i class="fa fa-car"></i> 6500 km</div>
+												<div class="item"><i class="fa fa-cogs"></i>1.8 turbo</div>
+											</div>
+											<div class="card-dealerAdress">
+											<i class="fa fa-map-marker"></i><a href="#">  NorthCliff Auto Used Cars</a>
+											</div>					
+										</div>
+									</div>
+									</div>
+
+									<div class="paid-google-ad">
+										<img src="img/paid-ad.png">
+									</div>
+							</div>
+						</div>
+
+					<!-- Footer -->
+						<footer class="footer-main">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<ul class="list-unstyled">
+												<li><a href="#">Junk Mail Digital Media</a></li>
+												<li><a href="#">GotProperty</a</li>
+												<li><a href="#">Truck & Trailer</a</li>
+												<li><a href="#">AgriMag</a</li>
+												<li><a href="#">Mascus</a</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+											<ul class="list-unstyled">
+												<li><a href="#">Blog</a</li>
+												<li><a href="#">Sold Cars</a</li>
+												<li><a href="#">Terms of Service</a</li>
+												<li><a href="#">Privacy Policy</a</li>
+												<li><a href="#">Acceptable Use Policy</a</li>
+												<li><a href="#">Security Policy</a</li>
+											</ul>
+										</div>
+										<div class="col-md-4">
+												<ul class="list-unstyled"> 
+													<li><a href="#">Security Policy</a</li>
+													<li><a href="#">Services Refund Policy</a</li>
+													<li><a href="#">Buying and Selling Tips</a</li>
+													<li><a href="#">Contact Us</a</li>
+													<li><a href="#">Dealer Registration</a</li>
+													<li><a href="#">Used Cars</a></li>
+												</ul>
+										</div>
+									</div>
+										<!-- Copyright -->
+										<div class="page-footer font-small pt-4">
+											<div class="container">
+												<img src="img/am-logo.jpg">
+												<div class="copyright list-inline text-center py-2">
+													 Copyright @ Junk Mail Digital Media (Pty) Ltd - Auto Mart - classifieds of cars for Sale
+													</div>
+											</div>
+										</div>
+										<!-- Copyright -->
+								</div>
+						</footer>
+				</div>
+			</div>
+	</section>
+</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script> 
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

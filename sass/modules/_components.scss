@@ -1,0 +1,72 @@
+/* Components */
+
+@import 'base/variables';
+
+
+/* More cars blocks */
+
+#card-wrapper {
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .dealer-more {
+        margin-top: 15px;
+    }
+    
+    .card-body {
+        padding: 0.5rem;
+
+        .card-dealerAdress {
+            font-weight: bold;
+            color: $primary-color;
+            font-size: 11px;
+        }
+
+
+        .price-details {
+
+            position: relative;
+            bottom: 30px;
+            color: $white;
+        
+            .small-modal {
+                background: $black;
+                opacity: 0.9;
+                margin: 7px;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 11px;
+            }
+        }
+
+            
+        .card-more-extras {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        
+            .item {
+                width: 50%;
+                text-align: initial;
+                padding: 0px;
+                line-height: 1.5em;
+            }
+        
+            .icon-svg {
+                width: 25px;
+                display: flex;
+            }
+        
+            .item-value {
+                font-weight: bold;
+            }
+        }
+    }
+
+ 
+    
+}
+
+

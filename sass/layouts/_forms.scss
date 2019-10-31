@@ -1,0 +1,96 @@
+/* Form styles */
+
+#search-car {
+    margin-top: 20px;
+
+    label {
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    input {
+        margin: 5px 0 5px 0;  
+    }
+
+    .form-group {
+        margin-bottom: 0rem;
+    }
+}
+
+
+#range {
+    display: flex;
+
+    .range-separator {
+        padding: 0 5px 0 5px;
+    } 
+}
+
+.fa-map-marker {
+    float: right;
+    margin-right: 6px;
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;  
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon, 
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: -11px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: -12px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}

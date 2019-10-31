@@ -1,0 +1,555 @@
+/*
+DotSlash Mockup Theme
+Author: Mathipa Jason Makgato
+Vesion: 0.0.1
+Date: 29/10/2019
+*/
+/* Base - Base styles, variables, mixins , etc */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* Variables file */
+/* colors */
+/* font sizes */
+@media (max-width: 767px) {
+  /* line 12, ../sass/base/_mixins.scss */
+  .google-ad {
+    margin-top: 55px;
+  }
+
+  /* line 16, ../sass/base/_mixins.scss */
+  .post-btn {
+    display: none;
+  }
+
+  /* line 20, ../sass/base/_mixins.scss */
+  .small-modal {
+    margin: 30px !important;
+  }
+}
+/* line 1, ../sass/base/_base.scss */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.1;
+  color: #000;
+  background-color: #eee;
+}
+
+/* line 9, ../sass/base/_base.scss */
+.footer-copyright {
+  text-align: center;
+}
+
+/* line 13, ../sass/base/_base.scss */
+.link {
+  color: #fff;
+}
+
+/* line 17, ../sass/base/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*  Modules - Sites components */
+/* Topography */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* line 5, ../sass/modules/_typography.scss */
+h5 {
+  font-weight: 500;
+}
+
+/* line 9, ../sass/modules/_typography.scss */
+.title-description {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* line 14, ../sass/modules/_typography.scss */
+.location {
+  font-size: 12px;
+}
+
+/* line 18, ../sass/modules/_typography.scss */
+.button-link a {
+  color: #fff;
+}
+
+/* line 22, ../sass/modules/_typography.scss */
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+/* Sider styles */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* line 6, ../sass/modules/_slider.scss */
+.carousel-thumbnails .carousel-indicators img {
+  max-width: 100px;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 14, ../sass/modules/_slider.scss */
+.carousel-thumbnails .carousel-indicators li {
+  height: auto;
+  max-width: 100px;
+  width: 100px;
+  border: none;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 21, ../sass/modules/_slider.scss */
+.carousel-thumbnails .carousel-indicators li.active {
+  border-bottom: 4px solid #fff;
+}
+
+/* Variables file */
+/* colors */
+/* font sizes */
+/*Top check blocks */
+/* line 6, ../sass/modules/_blocks.scss */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* line 21, ../sass/modules/_blocks.scss */
+.flex-item {
+  background: #007BFF;
+  padding: 25px;
+  width: 200px;
+  height: auto;
+  margin: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 33, ../sass/modules/_blocks.scss */
+.flex-item a {
+  font-weight: bold;
+}
+/* line 37, ../sass/modules/_blocks.scss */
+.flex-item a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Buttons */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* line 5, ../sass/modules/_buttons.scss */
+.post-btn {
+  margin-bottom: 15px;
+}
+
+/* line 9, ../sass/modules/_buttons.scss */
+.btn-post-ad {
+  background-color: #8A2BE2;
+  font-size: 13px;
+  color: #fff;
+}
+/* line 14, ../sass/modules/_buttons.scss */
+.btn-post-ad a:hover {
+  color: #fff;
+}
+
+/* line 19, ../sass/modules/_buttons.scss */
+.btn-view-number {
+  background-color: #28A745;
+  font-size: 13px;
+}
+
+/* line 24, ../sass/modules/_buttons.scss */
+.btn-mail-seller {
+  background-color: #007BFF;
+  font-size: 13px;
+}
+
+/* Components */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* More cars blocks */
+/* line 10, ../sass/modules/_components.scss */
+#card-wrapper .card {
+  margin-bottom: 15px;
+}
+/* line 14, ../sass/modules/_components.scss */
+#card-wrapper .dealer-more {
+  margin-top: 15px;
+}
+/* line 18, ../sass/modules/_components.scss */
+#card-wrapper .card-body {
+  padding: 0.5rem;
+}
+/* line 21, ../sass/modules/_components.scss */
+#card-wrapper .card-body .card-dealerAdress {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 11px;
+}
+/* line 28, ../sass/modules/_components.scss */
+#card-wrapper .card-body .price-details {
+  position: relative;
+  bottom: 30px;
+  color: #fff;
+}
+/* line 34, ../sass/modules/_components.scss */
+#card-wrapper .card-body .price-details .small-modal {
+  background: #000;
+  opacity: 0.9;
+  margin: 7px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+/* line 45, ../sass/modules/_components.scss */
+#card-wrapper .card-body .card-more-extras {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+/* line 50, ../sass/modules/_components.scss */
+#card-wrapper .card-body .card-more-extras .item {
+  width: 50%;
+  text-align: initial;
+  padding: 0px;
+  line-height: 1.5em;
+}
+/* line 57, ../sass/modules/_components.scss */
+#card-wrapper .card-body .card-more-extras .icon-svg {
+  width: 25px;
+  display: flex;
+}
+/* line 62, ../sass/modules/_components.scss */
+#card-wrapper .card-body .card-more-extras .item-value {
+  font-weight: bold;
+}
+
+/* Variables file */
+/* colors */
+/* font sizes */
+/* Section Search cars form */
+/* line 5, ../sass/modules/_sections.scss */
+.search-text {
+  padding: 5px 0 5px 0;
+}
+
+/* Top Search box */
+/* line 11, ../sass/modules/_sections.scss */
+#search-box {
+  padding: 8px;
+  background-color: #fff;
+}
+/* line 15, ../sass/modules/_sections.scss */
+#search-box .search-input {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* line 21, ../sass/modules/_sections.scss */
+#paid-add {
+  height: 300px;
+}
+
+/* Vehicle Details*/
+/* line 27, ../sass/modules/_sections.scss */
+#vehicle-details {
+  margin-top: 25px;
+  background-color: #fff;
+}
+/* line 31, ../sass/modules/_sections.scss */
+#vehicle-details .location-metadata {
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #7c7777;
+  color: #7c7777;
+}
+/* line 38, ../sass/modules/_sections.scss */
+#vehicle-details .price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #28A745;
+}
+/* line 44, ../sass/modules/_sections.scss */
+#vehicle-details .vehicle-detailed-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+/* line 49, ../sass/modules/_sections.scss */
+#vehicle-details .vehicle-detailed-info .item {
+  width: 50%;
+  line-height: 1.4em;
+}
+/* line 54, ../sass/modules/_sections.scss */
+#vehicle-details .vehicle-detailed-info .item-value {
+  font-weight: bold;
+}
+/* line 59, ../sass/modules/_sections.scss */
+#vehicle-details .vehicle-xtrainfo {
+  font-size: 12px;
+}
+/* line 63, ../sass/modules/_sections.scss */
+#vehicle-details .seller-info {
+  margin-bottom: 25px;
+  color: #7c7777;
+}
+/* line 67, ../sass/modules/_sections.scss */
+#vehicle-details .seller-info .dealerName {
+  color: #007BFF;
+  line-height: 2em;
+}
+/* line 71, ../sass/modules/_sections.scss */
+#vehicle-details .seller-info .phone-link {
+  margin-top: 10px;
+}
+/* line 75, ../sass/modules/_sections.scss */
+#vehicle-details .seller-info .seller-information {
+  font-size: 13px;
+}
+/* line 80, ../sass/modules/_sections.scss */
+#vehicle-details .seller-message {
+  border-bottom: 1px solid #7c7777;
+  border-top: 1px solid #7c7777;
+  padding: 7px 0 7px 0;
+  margin-bottom: 15px;
+}
+/* line 86, ../sass/modules/_sections.scss */
+#vehicle-details .seller-message .enquire {
+  padding-top: 10px;
+  font-size: 13px;
+}
+/* line 90, ../sass/modules/_sections.scss */
+#vehicle-details .seller-message .enquire a {
+  color: #fff;
+}
+/* line 96, ../sass/modules/_sections.scss */
+#vehicle-details .user-cta {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0 15px 0;
+}
+/* line 101, ../sass/modules/_sections.scss */
+#vehicle-details .user-cta a {
+  color: #7c7777;
+}
+/* line 105, ../sass/modules/_sections.scss */
+#vehicle-details .user-cta .item {
+  width: 33%;
+}
+
+/* line 112, ../sass/modules/_sections.scss */
+.menu-trail {
+  font-size: 11px;
+  color: #7c7777;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+/* line 119, ../sass/modules/_sections.scss */
+.card-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* line 124, ../sass/modules/_sections.scss */
+.card-text {
+  color: #7c7777;
+}
+
+/* line 128, ../sass/modules/_sections.scss */
+.google-ad {
+  margin-top: 15px;
+}
+
+/* line 132, ../sass/modules/_sections.scss */
+.paid-google-ad {
+  margin: 25px 0 75px 0;
+}
+
+/* line 137, ../sass/modules/_sections.scss */
+.car-brands {
+  margin-top: 15px;
+}
+
+/*  Layouts - Page layouts */
+/* Main nav style */
+/* Variables file */
+/* colors */
+/* font sizes */
+/* line 5, ../sass/layouts/_nav.scss */
+.navbar {
+  margin-bottom: 15px;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* line 11, ../sass/layouts/_nav.scss */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* line 15, ../sass/layouts/_nav.scss */
+.nav-items {
+  float: right;
+}
+
+/* Variables file */
+/* colors */
+/* font sizes */
+/* Footer styles */
+/* line 6, ../sass/layouts/_footer.scss */
+footer {
+  text-align: center;
+  color: #7c7777;
+}
+/* line 9, ../sass/layouts/_footer.scss */
+footer a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #7c7777;
+}
+/* line 14, ../sass/layouts/_footer.scss */
+footer a:hover {
+  text-decoration: none;
+  color: #007BFF;
+}
+/* line 19, ../sass/layouts/_footer.scss */
+footer img {
+  width: 50px;
+}
+/* line 23, ../sass/layouts/_footer.scss */
+footer .copyright {
+  font-size: 11px;
+}
+
+/* Form styles */
+/* line 3, ../sass/layouts/_forms.scss */
+#search-car {
+  margin-top: 20px;
+}
+/* line 6, ../sass/layouts/_forms.scss */
+#search-car label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+/* line 11, ../sass/layouts/_forms.scss */
+#search-car input {
+  margin: 5px 0 5px 0;
+}
+/* line 15, ../sass/layouts/_forms.scss */
+#search-car .form-group {
+  margin-bottom: 0rem;
+}
+
+/* line 21, ../sass/layouts/_forms.scss */
+#range {
+  display: flex;
+}
+/* line 24, ../sass/layouts/_forms.scss */
+#range .range-separator {
+  padding: 0 5px 0 5px;
+}
+
+/* line 29, ../sass/layouts/_forms.scss */
+.fa-map-marker {
+  float: right;
+  margin-right: 6px;
+  margin-top: -26px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 37, ../sass/layouts/_forms.scss */
+.icon-addon {
+  position: relative;
+  color: #555;
+  display: block;
+}
+
+/* line 43, ../sass/layouts/_forms.scss */
+.icon-addon:after,
+.icon-addon:before {
+  display: table;
+  content: " ";
+}
+
+/* line 49, ../sass/layouts/_forms.scss */
+.icon-addon:after {
+  clear: both;
+}
+
+/* line 53, ../sass/layouts/_forms.scss */
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  font-size: 14px;
+  width: 20px;
+  margin-left: -2.5px;
+  text-align: center;
+  padding: 10px 0;
+  top: -11px;
+}
+
+/* line 68, ../sass/layouts/_forms.scss */
+.icon-addon.addon-sm .form-control {
+  height: 30px;
+  padding: 5px 10px 5px 28px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* line 75, ../sass/layouts/_forms.scss */
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+  font-size: 18px;
+  margin-left: 0;
+  left: 11px;
+  top: -12px;
+}
+
+/* line 83, ../sass/layouts/_forms.scss */
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+  padding-left: 30px;
+  float: left;
+  font-weight: normal;
+}
+
+/* line 90, ../sass/layouts/_forms.scss */
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+  margin-left: 0;
+  font-size: 12px;
+  left: 5px;
+  top: -1px;
+}
+
+/* Header styles */
+/* Variables file */
+/* colors */
+/* font sizes */

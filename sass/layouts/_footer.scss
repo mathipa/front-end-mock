@@ -1,0 +1,26 @@
+@import 'base/variables';
+
+/* Footer styles */
+
+
+footer {
+    text-align: center;
+    color: $gray-color;
+    a {
+        font-size: 12px;
+        font-weight: bold;
+        color: $gray-color;
+    }
+    a:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+}

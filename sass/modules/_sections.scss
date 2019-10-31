@@ -1,0 +1,139 @@
+@import 'base/variables';
+
+
+/* Section Search cars form */
+.search-text {
+    padding: 5px 0 5px 0;
+}
+
+
+/* Top Search box */
+#search-box {
+    padding: 8px;
+    background-color:$white;
+
+    .search-input{ 
+        background-color:$primary-color;
+        color:$white;
+    }
+}
+
+#paid-add {
+    height: 300px;
+}
+
+
+/* Vehicle Details*/
+#vehicle-details {
+    margin-top: 25px;
+    background-color: $white;
+
+    .location-metadata {
+        padding:10px 0px 10px 0px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $gray-color;
+        color: $gray-color;
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: bold;
+        color: $seconday-color;
+    }
+
+    .vehicle-detailed-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        .item {
+            width: 50%;
+            line-height: 1.4em;
+        }
+
+        .item-value {
+            font-weight: bold;
+        }
+    }
+
+    .vehicle-xtrainfo {
+        font-size: 12px;
+    }
+
+    .seller-info {
+        margin-bottom: 25px;
+        color: $gray-color;
+        
+        .dealerName {
+            color: $primary-color;
+            line-height: 2em;
+        }
+        .phone-link {
+            margin-top: 10px;
+        }
+
+        .seller-information {
+            font-size: $font-normal;
+        }
+    }
+
+    .seller-message {
+        border-bottom: 1px solid $gray-color;
+        border-top: 1px solid $gray-color;
+        padding: 7px 0 7px 0;
+        margin-bottom: 15px;
+
+        .enquire{
+            padding-top: 10px;
+            font-size: $font-normal;
+        
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .user-cta{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px 0 15px 0;
+
+        a {
+            color: $gray-color;
+        }
+
+        .item {
+            width: 33%;
+        }
+
+    }
+}
+
+.menu-trail {
+    font-size: 11px;
+    color: $gray-color;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-text {
+    color: $gray-color;
+}
+
+.google-ad {
+    margin-top: 15px;
+}
+
+.paid-google-ad {
+    margin: 25px 0 75px 0;
+}
+
+
+.car-brands {
+    margin-top: 15px;
+}

@@ -1,0 +1,30 @@
+/*
+DotSlash Mockup Theme
+Author: Mathipa Jason Makgato
+Vesion: 0.0.1
+Date: 29/10/2019
+*/
+
+/* Base - Base styles, variables, mixins , etc */
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+
+/*  Modules - Sites components */
+
+@import 'modules/_typography.scss';
+@import 'modules/_slider.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+@import 'modules/_sections.scss';
+
+
+/*  Layouts - Page layouts */
+
+@import 'layouts/_nav.scss';
+@import 'layouts/_footer.scss';
+@import 'layouts/_forms.scss';
+@import 'layouts/_header.scss';

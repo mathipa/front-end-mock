@@ -1,0 +1,17 @@
+/* Main nav style */
+
+@import 'base/variables';
+
+.navbar {
+    margin-bottom: 15px;
+    background-color: $primary-color;
+    color: $white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+}
+
+.nav-items {
+    float: right;
+}
